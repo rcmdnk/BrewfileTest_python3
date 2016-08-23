@@ -3,4 +3,3 @@
 
 # Other Homebrew packages
 brew wget --HEAD --with-iri --with-debug
-brew tig --with-docs
