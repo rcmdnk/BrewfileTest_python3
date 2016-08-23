@@ -1,5 +1,2 @@
 
 # tap repositories and their packages
-
-# Other Homebrew packages
-brew wget --HEAD --with-iri --with-debug
