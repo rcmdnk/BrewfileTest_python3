@@ -1,9 +1,23 @@
-## Before commands
-before echo EXT before
+#!/usr/bin/env bash
 
-# brew install with opt
-#brew wget --HEAD --with-iri --with-debug
+#BREWFILE_IGNORE
+if ! which brew >& /dev/null;then
+  brew_installed=0
+  echo Homebrew is not installed!
+  echo Install now...
+  echo /bin/bash -c \"\$\(curl -fsSL
+https://raw.githubusercontent.com/Homebrew/
+install/master/install.sh\)\  /bin/bash -c "$(curl -fsSL
+https://raw.githubusercontent.com/Homebrew/
+install/master/install.sh)  echo
+fi
+#BREWFILE_ENDIGNORE
+
+# Before commands
+echo EXT before
+
+# Other Homebrew packages
 brew install cmake --HEAD
 
-## After commands
-after echo EXT after
+# After commands
+echo EXT after
